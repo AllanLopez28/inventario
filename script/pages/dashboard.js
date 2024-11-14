@@ -1,4 +1,4 @@
-// scripts/pages/dashboard.js
+// Archivo: dashboard.js
 import Auth from '../auth.js';
 
 class DashboardPage {
@@ -14,6 +14,7 @@ class DashboardPage {
     async init() {
         // Verificar autenticación
         const user = Auth.getCurrentUser();
+        console.log('Usuario autenticado:', user);  // Debug para ver qué devuelve Auth.getCurrentUser()
         if (!user || user.role !== 'super_admin') {
             window.location.href = '../pages/login.html';
             return;

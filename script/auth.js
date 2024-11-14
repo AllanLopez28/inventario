@@ -1,4 +1,4 @@
-// scripts/auth.js
+// Archivo: auth.js
 import { PERMISSIONS, DEFAULT_ROUTES } from './utils/constants.js';
 
 const Auth = {
